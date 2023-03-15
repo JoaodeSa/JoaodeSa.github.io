@@ -1,0 +1,42 @@
+.header-sessao {
+  background: #000;
+}
+
+.header {
+  max-width: 1200px;
+  padding: 30px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.header-menu a {
+  color: #fff;
+  background: var(--default-red);
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: block;
+}
+.header-menu a:hover {
+  background: #a11111;
+}
+
+@media (max-width: 460px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 282px) {
+  .header-menu {
+    display: none;
+  }
+}
